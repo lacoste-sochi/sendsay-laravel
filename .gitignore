@@ -1,0 +1,27 @@
+# Игнорируем IDE-файлы
+/.idea
+/.vscode
+*.swp
+*.swo
+
+# Игнорируем системные файлы
+.DS_Store
+Thumbs.db
+
+# Игнорируем зависимости Composer
+/vendor/
+/composer.lock
+
+# Игнорируем тестовое окружение (если есть)
+/test-app/
+/tests/TestCase.php
+
+# Игнорируем кэш PHPUnit
+.phpunit.result.cache
+
+# Игнорируем локальные конфиги
+.env
+.php-cs-fixer.cache
+
+# Игнорируем сгенерированную документацию
+/docs/_build/
