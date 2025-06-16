@@ -1,5 +1,6 @@
 {
     "name": "rutrue/laravel-sendsay",
+    "version": "1.0.0",
     "description": "Пакет для работы с транзакционными письмами через sendsay.ru (Laravel)",
     "type": "library",
     "license": "MIT",
