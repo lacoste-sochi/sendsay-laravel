@@ -214,7 +214,7 @@ class TestSendayController extends Controller
             ['email' => 'test@example.com'],
             [
                 'name' => 'Test User',
-                'phone' => '79996502245',
+                'phone' => '79991112233',
                 'password' => bcrypt('password'),
                 'email' => 'info@rutrue.ru'
             ]
@@ -232,7 +232,7 @@ class TestSendayController extends Controller
 
             // Логируем для проверки
             Log::info('EMAIL отправлено', [
-                'phone' => $user->phone,
+                'email' => $user->email,
                 'api_response' => $apiResponse
             ]);
 
@@ -244,7 +244,7 @@ class TestSendayController extends Controller
 
         } catch (\Exception $e) {
             Log::error('Ошибка отправки EMAIL', [
-                'phone' => $user->phone,
+                'email' => $user->email,
                 'error' => $e->getMessage()
             ]);
 
